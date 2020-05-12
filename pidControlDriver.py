@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 def main():
    
     # PID gain değerleri
-    P = 0.30
-    I = 0.0001
-    D = 0.00001
+    P = 2
+    I = 0.001
+    D = 0.5
     
     sampleTime = 30
     desiredValue = 40
