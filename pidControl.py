@@ -19,18 +19,15 @@ class pidController():
     def getSystem(self):
         return self.system
     
-    # sistemin işlem süresini giriyouz
     def setSampleTime(self,sampleTime):
         self.sampleTime = sampleTime
     
-    # istenilen değerimiz (değerimiz)
     def setDesiredValue(self,desiredValue):
         self.desiredValue = desiredValue
     
     def setSystem(self,system):
         self.system = system
     
-    # feedback and system output
     def systemOutput(self,processOutput):
         self.output = self.system(processOutput)
         return self.output 
