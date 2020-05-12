@@ -28,14 +28,17 @@ class pidController():
     def setSystem(self,system):
         self.system = system
     
+    # calculate output and feedback value
     def systemOutput(self,processOutput):
         self.output = self.system(processOutput)
         return self.output 
     
+    # calculate error value
     def errorCalculate(self,feedback):
         self.error = self.desiredValue - feedback
         return self.error
     
+    # find PID gain and calculate output value
     def pid(self,feedback):
         
         self.last_err = 0
